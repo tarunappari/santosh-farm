@@ -123,6 +123,7 @@ const Aboutusontainer = styled.div`
     @media only screen and (max-width:620px){
         padding: 0.5rem;
         gap: 1rem;
+        max-height: none;
         .right-container{
             padding: 0;
             h3{
