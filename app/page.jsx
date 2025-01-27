@@ -1,6 +1,6 @@
 "use client"
 import Aboutus from "./components/landingpage/AboutUs";
-import HeroSection from "./components/landingpage/HeroSEction";
+import HeroSection from "./components/landingpage/HeroSection";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
