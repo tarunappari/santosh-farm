@@ -121,7 +121,7 @@ const Aboutusontainer = styled.div`
     }
 
     @media only screen and (max-width:620px){
-        padding: 0.5rem;
+        padding: 1.5rem 0.7rem;
         gap: 1rem;
         max-height: none;
         .right-container{
