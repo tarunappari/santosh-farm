@@ -175,10 +175,19 @@ const ServiceContainer = styled.div`
         padding: 1rem 0;
         .cards{
             padding: 0 2rem;
+            &>div{
+                grid-template-columns: 1fr;
+            }
+            .card{
+                margin: 1rem auto;
+            }
         }
         .info{
             p{
                 padding: 0 5rem;
+            }
+            h1{
+                font-size: 2.5rem;
             }
         }
     }
@@ -194,10 +203,13 @@ const ServiceContainer = styled.div`
             }
         }
         .cards{
-            grid-template-columns: 1fr;
+            
+            &>div{
+                grid-template-columns: 1fr;
+            }
             .card{
                 max-width: 100%;
-            min-width: 100%;
+                min-width: 100%;
             }
         }
     }

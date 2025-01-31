@@ -83,7 +83,7 @@ let Container = styled.div`
     position: relative;
     .chooseUs-title{
         position: absolute;
-        top: 2rem;
+        top: 4rem;
         min-width: 98vw;
         h1{
             text-align: center;
@@ -91,6 +91,19 @@ let Container = styled.div`
             font-size: 2.2rem;
             font-weight: 600;
         }
+    }
+
+    @media only screen and (max-width:955px){
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    @media only screen and (max-width:575px){
+        .chooseUs-title{
+        h1{
+            font-size: 1.5rem;
+        }
+    }
     }
 `
 
@@ -139,5 +152,59 @@ let ChooseUsContainer = styled.div`
     }
     .chooseUs-animation{
         width: 5rem;
+    }
+
+    @media only screen and (max-width:955px){
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    @media only screen and (max-width:575px){
+        .left-container{
+            h1{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            p{
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+
+        .right-container{
+        gap: 1rem;
+        &>div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            &>div{
+                h2{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .chooseUs-animation{
+        width: 4rem;
+    }
+    }
+
+    @media only screen and (max-width:350px){
+        .right-container{
+        &>div{
+            grid-template-columns: 1fr ;
+        }
+    }
+    .right-container{
+        &>div{
+            &>div{
+                gap: 1rem;
+            }
+        }
+    }
+    .chooseUs-animation{
+        width: 5rem;
+    }
     }
 `
