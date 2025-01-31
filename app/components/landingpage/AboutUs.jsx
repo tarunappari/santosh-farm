@@ -1,15 +1,16 @@
 import React from 'react'
 import styled from 'styled-components';
 import Image from 'next/image';
-import grass1 from '../../../public/assests/farm-house.jpg'
-import grass2 from '../../../public/assests/grass1.jpg'
-import grass3 from '../../../public/assests/grass3.jpg'
+import grass1 from '../../../public/assests/spray.jpg'
+import grass2 from '../../../public/assests/rolls.jpg'
+import { motion as m } from "framer-motion";
 
 const Aboutus = () => {
     return (
         <Aboutusontainer>
             <div className="left-container">
                 <div className="grass3">
+
                 </div>
                 <div className="farmhouse">
                     <Image src={grass1} alt='img' width={320} />
@@ -24,9 +25,21 @@ const Aboutus = () => {
                 </div>
             </div>
             <div className="right-container">
-                <h3>ABOUT US</h3>
-                <h1>We Provide the Green That Brings Comfort to Your Space</h1>
-                <p>Your destination for premium-quality grass solutions. We specialize in diverse grass varieties to transform any space into a lush green haven, whether it’s a balcony, garden, or terrace. With sustainable practices and a passion for greenery, we provide vibrant, durable, and eco-friendly grass tailored to your needs. At Santosh Farms, we don’t just grow grass—we cultivate beauty, comfort, and happiness in every corner of your life.</p>
+                <m.h3
+                    initial={{ x: 50, opacity: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ type: 'spring', duration: 1, delay: 0.2 }}
+                    viewport={{ once: true, amount: 0.5 }}>ABOUT US</m.h3>
+                <m.h1
+                    initial={{ x: 100, opacity: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ type: 'spring', duration: 1, delay: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}>We Provide the Green That Brings Comfort to Your Space</m.h1>
+                <m.p
+                    initial={{ x: 150, opacity: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ type: 'spring', duration: 1, delay: 0.7 }}
+                    viewport={{ once: true, amount: 0.5 }}>Your destination for premium-quality grass solutions. We specialize in diverse grass varieties to transform any space into a lush green haven, whether it’s a balcony, garden, or terrace. With sustainable practices and a passion for greenery, we provide vibrant, durable, and eco-friendly grass tailored to your needs. At Santosh Farms, we don’t just grow grass—we cultivate beauty, comfort, and happiness in every corner of your life.</m.p>
             </div>
         </Aboutusontainer>
     )
@@ -66,6 +79,7 @@ const Aboutusontainer = styled.div`
             background-color: var(--background);
             position: absolute;
             left: 2rem;
+            bottom: 5rem;
             display: flex;
             justify-content: center;
             align-items:center;
