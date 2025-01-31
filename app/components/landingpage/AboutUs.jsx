@@ -29,7 +29,7 @@ const Aboutus = () => {
                     initial={{ x: 50, opacity: 0 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ type: 'spring', duration: 1, delay: 0.2 }}
-                    viewport={{ once: true, amount: 0.5 }}>ABOUT US</m.h3>
+                    viewport={{ once: true, amount: 0.5 }}>ABOUT  US</m.h3>
                 <m.h1
                     initial={{ x: 100, opacity: 0 }}
                     whileInView={{ opacity: 1, x: 0 }}
