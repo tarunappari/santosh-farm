@@ -11,25 +11,25 @@ const Services = () => {
                     initial={{ y: -50, opacity: 0 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ type: 'spring', duration: 1, delay: 0.2 }}
-                    viewport={{ once: true, amount: 0.5 }}>OUR PRODUCTS</m.h3>
+                    viewport={{ once: true, amount: 1 }}>OUR PRODUCTS</m.h3>
                 <m.h1
                     initial={{ y: -100, opacity: 0 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ type: 'spring', duration: 1, delay: 0.5 }}
-                    viewport={{ once: true, amount: 0.5 }}>Sustainably Grown, Beautifully Green</m.h1>
+                    viewport={{ once: true, amount: 1 }}>Sustainably Grown, Beautifully Green</m.h1>
                 <m.p
                     initial={{ y: -150, opacity: 0 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ type: 'spring', duration: 1, delay: 0.8 }}
-                    viewport={{ once: true, amount: 0.5 }}>At Santosh Farms, we offer a diverse range of grass varieties to suit every need and environment. Here are four of our most popular types:
+                    viewport={{ once: true, amount: 1 }}>At Santosh Farms, we offer a diverse range of grass varieties to suit every need and environment. Here are four of our most popular types:
                 </m.p>
             </div>
             <div className="cards">
                 <div>
                     <m.div className="card"
-                        initial={{ x: -100, opacity: 0 }}
+                        initial={{ x: 100, opacity: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ type: 'spring', duration: 1, delay: 0.5 }}
+                        transition={{ type: 'spring', duration: 1, delay: 0.2 }}
                         viewport={{ once: true, amount: 0.5 }}>
                         <div className='card-img'>
 
@@ -41,9 +41,9 @@ const Services = () => {
                         </div>
                     </m.div>
                     <m.div className="card"
-                        initial={{ x: -200, opacity: 0 }}
+                        initial={{ x: -100, opacity: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ type: 'spring', duration: 1, delay: 0.8 }}
+                        transition={{ type: 'spring', duration: 1, delay: 0.2 }}
                         viewport={{ once: true, amount: 0.5 }}>
                         <div className='card-img card-img2'>
                         </div>
@@ -56,9 +56,9 @@ const Services = () => {
                 </div>
                 <div>
                     <m.div className="card"
-                        initial={{ x: -100, opacity: 0 }}
+                        initial={{ x: 200, opacity: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ type: 'spring', duration: 1, delay: 0.5 }}
+                        transition={{ type: 'spring', duration: 1, delay: 0.2 }}
                         viewport={{ once: true, amount: 0.5 }}>
                         <div className='card-img card-img3'>
                         </div>
@@ -71,7 +71,7 @@ const Services = () => {
                     <m.div className="card"
                         initial={{ x: -200, opacity: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ type: 'spring', duration: 1, delay: 0.8 }}
+                        transition={{ type: 'spring', duration: 1, delay: 0.2 }}
                         viewport={{ once: true, amount: 0.5 }}>
                         <div className='card-img card-img4'>
                         </div>
@@ -94,6 +94,8 @@ const ServiceContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 100vw;
+    overflow: hidden;
     min-height: 100vh;
     background-color: #f9f5f0;
     gap: 2rem;

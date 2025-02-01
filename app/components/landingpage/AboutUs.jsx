@@ -13,7 +13,7 @@ const Aboutus = () => {
 
                 </div>
                 <div className="farmhouse">
-                    <Image src={grass1} alt='img' width={320} />
+                    <Image src={grass1} alt='img' width={320}  loading="lazy" />
                 </div>
                 <div className="experience">
                     <div style={{ color: 'var(--headings)', fontSize: '1.4rem' }}>20+</div>
@@ -21,7 +21,7 @@ const Aboutus = () => {
                     <div>Experience</div>
                 </div>
                 <div className="grass2">
-                    <Image src={grass2} alt='img' width={320} />
+                    <Image src={grass2} alt='img' width={320} loading="lazy" />
                 </div>
             </div>
             <div className="right-container">

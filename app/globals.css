@@ -31,7 +31,7 @@ img {
 }
 
 .herosection {
-  background-image: url("/hero-bg.jpg");
+  background-image: url("/assests/treebg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,21 +55,22 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.grass2::before,.grass3::before {
+.grass2::before,
+.grass3::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2); 
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.card-img{
-  background-image: url("/assests/treebg.jpg");
+.card-img {
+  background-image: url("/assests/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -77,19 +78,19 @@ img {
   filter: blur(0.1px);
 }
 
-.card-img2{
+.card-img2 {
   background-image: url("/assests/sprinkle.jpg");
 }
 
-.card-img3{
+.card-img3 {
   background-image: url("/assests/sprinkle-man.jpg");
 }
 
-.card-img4{
+.card-img4 {
   background-image: url("/assests/track.jpg");
 }
 
-.chooseUs{
+.chooseUs {
   background-image: url("/assests/sprinkle-man.jpg");
   background-size: cover;
   background-position: center;
@@ -98,14 +99,24 @@ img {
   filter: blur(0.1px);
 }
 
-.chooseUs::before  {
+.chooseUs::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2); 
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 4 * 2 ));
+  }
 }
 
 
@@ -117,15 +128,15 @@ img {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--white); 
+  background: var(--white);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b5b4b4; 
+  background: #b5b4b4;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #888; 
+  background: #888;
 }
