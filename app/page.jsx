@@ -7,6 +7,7 @@ const Services = dynamic(() => import("./components/landingpage/Services"), { ss
 const Navbar = dynamic(() => import("./components/Navbar"), { ssr: false });
 const ChooseUs = dynamic(() => import("./components/landingpage/ChooseUs"), { ssr: false });
 const Testimonals = dynamic(() => import("./components/landingpage/Testimonals"), { ssr: false });
+const Contact = dynamic(() => import("./components/landingpage/Contact"), { ssr: false });
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <ChooseUs />
       <Testimonals />
+      <Contact />
     </div>
   );
 }

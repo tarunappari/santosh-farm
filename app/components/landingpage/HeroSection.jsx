@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Lottie from 'lottie-react'
-import grass from '../../../public/lottie/grass.json'
+import grass from '../../../public/lottie/landing.json'
 import { motion as m } from "framer-motion";
 
 const HeroSection = () => {
@@ -39,7 +39,7 @@ const HeroSection = () => {
 export default HeroSection;
 
 const HeroSectionContainer = styled.div`
-    background-color: rgb(0, 0, 0,0.3);
+    background-color: rgb(0, 0, 0);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@ const HeroSectionContainer = styled.div`
     gap: 1rem;
     padding: 2rem;
     .landing-animation{
-        width: 45%;
+        width: 95%;
         height: 5rem;
     }
     h2,h1,p{
