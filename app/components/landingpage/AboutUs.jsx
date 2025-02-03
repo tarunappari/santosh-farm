@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import grass1 from '../../../public/assests/spray.jpg'
 import grass2 from '../../../public/assests/rolls.jpg'
+import grass3 from '../../../public/assests/tracktor.jpg'
 import { motion as m } from "framer-motion";
 
 const Aboutus = () => {
@@ -10,10 +11,10 @@ const Aboutus = () => {
         <Aboutusontainer>
             <div className="left-container">
                 <div className="grass3">
-
+                    <Image src={grass3} alt='img' width={320} loading="lazy" />
                 </div>
                 <div className="farmhouse">
-                    <Image src={grass1} alt='img' width={320}  loading="lazy" />
+                    <Image src={grass1} alt='img' width={320} loading="lazy" />
                 </div>
                 <div className="experience">
                     <div style={{ color: 'var(--headings)', fontSize: '1.4rem' }}>20+</div>
@@ -116,6 +117,57 @@ const Aboutusontainer = styled.div`
         left: 20rem;
         top: -9rem;
         border: 6px solid var(--white);
+    }
+
+    @media (min-width: 1800px) and (max-width: 3008px){
+        .left-container{
+            padding-left: 15rem;
+            .experience{
+                left: 17rem;
+            }
+            .farmhouse{
+                width: 30rem;
+                height: 40rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .grass3{
+                width: 15rem;
+                height: 13rem;
+                background: none;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .grass2{
+            width: 22rem;
+            left: 28rem;
+            img{
+                width: 100%;
+            }
+        }
+        .right-container{
+        padding: 1.5rem;
+        h3{
+            font-size: 3rem;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            padding-top: 0.8rem;
+            font-size: 1.9rem;
+        }
+    }
+    }
+
+    @media (min-width: 1800px) and (max-width: 2240px){
+        .left-container{
+            padding-left: 5rem;
+        }
     }
 
     @media only screen and (max-width:1100px){

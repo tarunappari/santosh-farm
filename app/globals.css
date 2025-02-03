@@ -39,14 +39,14 @@ img {
   filter: blur(0px);
 }
 
-.grass3 {
+/* .grass3 {
   background-image: url("/assests/tracktor.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   filter: blur(0px);
-}
+} */
 
 .herosection::before {
   content: "";

@@ -93,6 +93,12 @@ let Container = styled.div`
         }
     }
 
+    @media (min-width: 1800px) and (max-width: 3000px){
+        h1{
+            font-size: 2.8rem;
+        }
+    }
+
     @media only screen and (max-width:955px){
         grid-template-columns: 1fr;
         min-height: auto;
@@ -152,6 +158,36 @@ let ChooseUsContainer = styled.div`
     }
     .chooseUs-animation{
         width: 5rem;
+    }
+
+    @media (min-width: 1800px) and (max-width: 3000px){
+        grid-template-columns: 1fr;
+        .left-container{
+        padding: 1.5rem 5rem;
+        padding-top: 7rem;
+        h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+        p{
+            font-size:2rem;
+            text-align: center;
+        }
+    }
+    .right-container{
+        gap: 0.5rem;
+        &>div{
+            grid-template-columns: 1fr 1fr;
+            &>div{
+                h2{
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+    .chooseUs-animation{
+        width: 7.5rem;
+    }
     }
 
     @media only screen and (max-width:955px){

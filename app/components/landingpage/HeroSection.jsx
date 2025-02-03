@@ -74,6 +74,18 @@ const HeroSectionContainer = styled.div`
         font-size: 1.1rem;
     }
 
+    @media (min-width: 1800px) and (max-width: 3008px){
+        h2{
+        font-size: 2.8rem;
+    }
+    h1{
+        font-size: 5.5rem;
+    }
+    p{
+        font-size: 2.1rem;
+    }
+    }
+
     @media only screen and (max-width:780px){
         padding: 1rem;
         h1{
