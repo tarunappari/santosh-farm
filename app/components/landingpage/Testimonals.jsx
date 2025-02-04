@@ -413,25 +413,51 @@ const TestimonalsContainer = styled.div`
     transform: translateZ(0.3rem);
 }
 
-/* .slider::before {
-    background: linear-gradient(to right, rgb(221, 218, 218) 50%, rgba(224, 224, 224, 0.5) 100%);
-    content: '';
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    z-index: 10;
-    left: 0;
+@media (min-width: 1800px) and (max-width: 3008px){
+    
+    .info{
+        .left{
+        h3{
+            font-size: 2.3rem;
+        }
+        h1{
+            font-size: 3.25rem;
+        }
+        p{
+            font-size: 2.1rem;
+            padding: 0 8rem;
+        }
+        }
+        .right{
+            width: 40rem;
+            padding: 2rem;
+        }
+    }
+
+    .testimonal-card {
+  min-height: 15rem;
+  max-width: 45rem;
+  min-width: 45rem;
 }
 
-.slider::after {
-    background: linear-gradient(to left, rgb(248, 248, 248) 50%, rgba(216, 216, 216, 0.5) 100%);
-    content: '';
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    z-index: 10;
-    right: 0;
-} */
+.guest{
+    bottom: -8rem;
+    img{
+        width: 5rem;
+        height:5rem;
+    }
+    div{
+        h3{
+            font-weight: 600;
+            font-size: 2rem;
+        }
+    }
+}
+
+.testimonal-card p{
+    font-size: 1.5rem;
+}
+}
 
 @media only screen and (max-width:1050px){
     .info{

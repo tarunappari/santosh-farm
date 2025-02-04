@@ -40,7 +40,7 @@ export default HeroSection;
 
 const HeroSectionContainer = styled.div`
     background-color: rgb(0, 0, 0);
-    min-height: 100vh;
+    min-height: 93vh;
     display: flex;
     justify-content: center;
     align-items: center;

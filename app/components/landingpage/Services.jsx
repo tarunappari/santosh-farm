@@ -25,63 +25,46 @@ const Services = () => {
                 </m.p>
             </div>
             <div className="cards">
-                <div>
-                    <m.div className="card"
-                        initial={{ x: 100, opacity: 0 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ type: 'spring', duration: 1, delay: 0.2 }}
-                        viewport={{ once: true, amount: 0.5 }}>
-                        <div className='card-img'>
+                <m.div className="card"
+                    initial={{ x: 100, opacity: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ type: 'spring', duration: 1, delay: 0.2 }}
+                    viewport={{ once: true, amount: 0.5 }}>
+                    <div className='card-img'>
 
-                        </div>
-                        <div className='card-info'>
-                            <h2>Shade-Tolerant Grass</h2>
-                            <p>  Perfect for areas with limited sunlight, this grass thrives in shaded environments, making it ideal for balconies, under trees, or indoor spaces. Its lush, green appearance adds a touch of elegance to any setting.  </p>
-                            <button>e.g., Zoysia Grass</button>
-                        </div>
-                    </m.div>
-                    <m.div className="card"
-                        initial={{ x: -100, opacity: 0 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ type: 'spring', duration: 1, delay: 0.2 }}
-                        viewport={{ once: true, amount: 0.5 }}>
-                        <div className='card-img card-img2'>
-                        </div>
-                        <div className='card-info'>
-                            <h2>Ornamental Grass </h2>
-                            <p>Designed to enhance the aesthetic appeal of your spaces, this grass variety is perfect for decorative purposes. Its graceful, flowing blades add texture and beauty to gardens, terraces, and office spaces. </p>
-                            <button>e.g., Fountain Grass</button>
-                        </div>
-                    </m.div>
-                </div>
-                <div>
-                    <m.div className="card"
-                        initial={{ x: 200, opacity: 0 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ type: 'spring', duration: 1, delay: 0.2 }}
-                        viewport={{ once: true, amount: 0.5 }}>
-                        <div className='card-img card-img3'>
-                        </div>
-                        <div className='card-info'>
-                            <h2>Outdoor Lawn Grass </h2>
-                            <p> Known for its durability and resilience, Bermuda Grass is perfect for outdoor lawns, parks, and sports fields. It withstands heavy foot traffic and recovers quickly, maintaining its vibrant green color even in harsh weather conditions.</p>
-                            <button>e.g., Bermuda Grass</button>
-                        </div>
-                    </m.div>
-                    <m.div className="card"
-                        initial={{ x: -200, opacity: 0 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ type: 'spring', duration: 1, delay: 0.2 }}
-                        viewport={{ once: true, amount: 0.5 }}>
-                        <div className='card-img card-img4'>
-                        </div>
-                        <div className='card-info'>
-                            <h2>Drought-Resistant Grass  </h2>
-                            <p>    Ideal for regions with water scarcity, this grass variety requires minimal watering and thrives in hot, dry climates. It’s perfect for sustainable landscaping and eco-friendly projects.  </p>
-                            <button>e.g., Bermuda Grass</button>
-                        </div>
-                    </m.div>
-                </div>
+                    </div>
+                    <div className='card-info'>
+                        <h2>Shade-Tolerant Grass</h2>
+                        <p>  Perfect for areas with limited sunlight, this grass thrives in shaded environments, making it ideal for balconies, under trees, or indoor spaces. Its lush, green appearance adds a touch of elegance to any setting.  </p>
+                        <button>e.g., Zoysia Grass</button>
+                    </div>
+                </m.div>
+                <m.div className="card"
+                    initial={{ x: -100, opacity: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ type: 'spring', duration: 1, delay: 0.2 }}
+                    viewport={{ once: true, amount: 0.5 }}>
+                    <div className='card-img card-img2'>
+                    </div>
+                    <div className='card-info'>
+                        <h2>Ornamental Grass </h2>
+                        <p>Designed to enhance the aesthetic appeal of your spaces, this grass variety is perfect for decorative purposes. Its graceful, flowing blades add texture and beauty to gardens, terraces, and office spaces. </p>
+                        <button>e.g., Fountain Grass</button>
+                    </div>
+                </m.div>
+                <m.div className="card"
+                    initial={{ x: 200, opacity: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ type: 'spring', duration: 1, delay: 0.2 }}
+                    viewport={{ once: true, amount: 0.5 }}>
+                    <div className='card-img card-img3'>
+                    </div>
+                    <div className='card-info'>
+                        <h2>Outdoor Lawn Grass </h2>
+                        <p> Known for its durability and resilience, Bermuda Grass is perfect for outdoor lawns, parks, and sports fields. It withstands heavy foot traffic and recovers quickly, maintaining its vibrant green color even in harsh weather conditions.</p>
+                        <button>e.g., Bermuda Grass</button>
+                    </div>
+                </m.div>
             </div>
         </ServiceContainer>
     )
@@ -125,17 +108,12 @@ const ServiceContainer = styled.div`
     }
     .cards{
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        gap: 1rem;
         padding: 0 8rem;
-        &>div{
-            display: grid;
-            align-items: center;
-            justify-items: space-between;
-            grid-template-columns: 1fr 1fr;
-        }
         .card{
-            max-width: 80%;
+            max-width: 30%;
             min-width: 30%;
             min-height: 27rem;
             max-height: 27rem;
@@ -143,7 +121,6 @@ const ServiceContainer = styled.div`
             display: grid;
             grid-template-rows: 50% 50%;
             padding: 0.5rem;
-            margin: 0.5rem;
             border-radius: 1rem;
             box-shadow: 1px 1px 25px #cfcfcf;
             .card-img{
@@ -157,7 +134,7 @@ const ServiceContainer = styled.div`
                 padding: 1rem;
                 gap: 0.5rem;
                 h2{
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     font-weight: 600;
                 }
                 p{
@@ -167,21 +144,56 @@ const ServiceContainer = styled.div`
                 }
                 button{
                     color: var(--headings);
-                    font-size: 0.9rem;
+                    font-size: 0.8rem;
                 }
             }
         }
     }
 
+    @media (min-width: 1800px) and (max-width: 3008px){
+        .info{
+        gap: 0.5rem;
+        h3{
+            font-size: 2rem;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 2.2rem;
+        }
+    }
+    .cards{
+        
+    .card{
+            max-width: 30%;
+            min-width: 30%;
+            min-height: 40rem;
+            max-height: 40rem;
+            .card-info{
+                h2{
+                    font-size: 1.8rem;
+                }
+                p{
+                    font-size: 1.4rem;
+                    text-align: center;
+                }
+                button{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    }
+
     @media only screen and (max-width:955px){
         padding: 1rem 0;
         .cards{
-            padding: 0 2rem;
-            &>div{
-                grid-template-columns: 1fr;
-            }
+            flex-direction: column;
+            padding: 0 6rem;
             .card{
-                margin: 1rem auto;
+                max-width: 100%;
+                min-width: 100%;
             }
         }
         .info{
@@ -205,14 +217,7 @@ const ServiceContainer = styled.div`
             }
         }
         .cards{
-            
-            &>div{
-                grid-template-columns: 1fr;
-            }
-            .card{
-                max-width: 100%;
-                min-width: 100%;
-            }
+            padding: 0 0.5rem;
         }
     }
 

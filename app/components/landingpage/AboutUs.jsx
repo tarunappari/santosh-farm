@@ -65,8 +65,12 @@ const Aboutusontainer = styled.div`
             border: 6px solid #fff;
             position: absolute;
             width: 10rem;
-            height: 10rem;
+            height: 8rem;
             z-index: 2;
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
         .farmhouse{
             position: relative;

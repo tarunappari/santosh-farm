@@ -5,7 +5,7 @@ import contact from '../../../public/lottie/contact.json'
 
 const Contact = () => {
     return (
-        <ContactContainer className='contactsection'>
+        <ContactContainer className='contactsection' id='contact'>
             <div className='left-container'>
                 <div className="left-info">
                     <h1>Thousands of people trust our products</h1>
@@ -124,6 +124,45 @@ const ContactContainer = styled.div`
 
             }
         }
+    }
+
+    @media (min-width: 1800px) and (max-width: 3008px){
+        .left-container{
+        .left-info{
+            h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        }
+        .contact-animation{
+            width: 40rem;
+        }
+    }
+
+    .right-container{
+        .input-info {
+            gap: 2rem;
+            h1{
+                font-size: 3rem;
+            }
+            input,
+            textarea {
+                font-size: 1.8rem;
+            }
+
+            input:focus,
+            textarea:focus {
+                outline: none;
+            }
+
+            button {
+                padding: 0.6rem 3rem;
+                font-size: 2rem;
+            }
+        }
+    }
     }
 
     @media only screen and (max-width:920px){
