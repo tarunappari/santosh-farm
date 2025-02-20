@@ -154,13 +154,13 @@ const ServiceContainer = styled.div`
         .info{
         gap: 0.5rem;
         h3{
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         h1{
-            font-size: 4rem;
+            font-size: 3rem;
         }
         p{
-            font-size: 2.2rem;
+            font-size: 1.25rem;
         }
     }
     .cards{
@@ -172,14 +172,14 @@ const ServiceContainer = styled.div`
             max-height: 40rem;
             .card-info{
                 h2{
-                    font-size: 1.8rem;
+                    font-size: 1.3rem;
                 }
                 p{
-                    font-size: 1.4rem;
+                    font-size: 1.1rem;
                     text-align: center;
                 }
                 button{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                 }
             }
         }

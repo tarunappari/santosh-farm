@@ -14,7 +14,9 @@ const Testimonals = () => {
                 <div className="left">
                     <h3>What Our Clients Say</h3>
                     <h1>Trusted by Landscapers & Homeowners Alike</h1>
-                    <p>At Santosh Farms, we take pride in the trust our customers place in us. Here’s what some of them are saying: </p>
+                    <p> As one of South India’s largest premium grass suppliers, we cultivate and
+                        deliver over 1.2 million sq. ft. of vibrant grass annually, transforming landscapes
+                        for homeowners, businesses, and professionals. </p>
                 </div>
                 <div className="right">
                     <Lottie loop={true} animationData={review} />
@@ -418,13 +420,13 @@ const TestimonalsContainer = styled.div`
     .info{
         .left{
         h3{
-            font-size: 2.3rem;
+            font-size: 1.7rem;
         }
         h1{
-            font-size: 3.25rem;
+            font-size: 2.25rem;
         }
         p{
-            font-size: 2.1rem;
+            font-size: 1.3rem;
             padding: 0 8rem;
         }
         }
@@ -435,27 +437,27 @@ const TestimonalsContainer = styled.div`
     }
 
     .testimonal-card {
-  min-height: 15rem;
+  min-height: 10rem;
   max-width: 45rem;
   min-width: 45rem;
 }
 
 .guest{
-    bottom: -8rem;
+    bottom: -6rem;
     img{
-        width: 5rem;
-        height:5rem;
+        width: 3rem;
+        height:3rem;
     }
     div{
         h3{
             font-weight: 600;
-            font-size: 2rem;
+            font-size: 1.3rem;
         }
     }
 }
 
 .testimonal-card p{
-    font-size: 1.5rem;
+    font-size: 1.15rem;
 }
 }
 

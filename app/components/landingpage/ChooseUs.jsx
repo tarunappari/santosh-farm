@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 import Lottie from 'lottie-react'
 import leaf from '../../../public/lottie/leaf.json'
@@ -10,10 +10,11 @@ import recycle from '../../../public/lottie/recycle.json'
 import { motion as m } from "framer-motion";
 
 const ChooseUs = () => {
+
     return (
         <Container>
             <div className='chooseUs-title'>
-                <h1>WHY SANTOSH FARMS - WHY CHOOSE US</h1>
+                <h2>WHY SANTOSH FARMS - WHY CHOOSE US</h2>
             </div>
             <ChooseUsContainer>
                 <div className="left-container">
@@ -26,13 +27,17 @@ const ChooseUs = () => {
                         initial={{ x: -100, opacity: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ type: 'spring', duration: 1, delay: 0.5 }}
-                        viewport={{ once: true, amount: 0.5 }}>Santosh Farms offers premium grass varieties for every need, from the soft elegance of Korean Carpet Grass to the durability of Paspalam and the year-round vibrancy of Fescue Grass. Grown with sustainable practices, our grass thrives in all conditions. Create your perfect green space with us—because we don’t just grow grass, we cultivate happiness.</m.p>
+                        viewport={{ once: true, amount: 0.5 }}>With over 20 years of expertise, we’ve grown from 2 to 250 acres, driven by 
+                        quality, innovation, and sustainability. Using advanced machinery, automated 
+                        irrigation, and precision farming, we ensure efficiency and eco-friendly 
+                        practices while prioritizing customer satisfaction.</m.p>
                 </div>
                 <div className="right-container">
                     <div>
                         <div>
-                            <div className='chooseUs-animation'>
-                                <Lottie loop={true} animationData={leaf} />
+                            <div className='chooseUs-animation'
+                            >
+                                <Lottie animationData={leaf} loop={true} />
                             </div>
                             <h2>Premium Quality Grass</h2>
                         </div>
@@ -85,7 +90,7 @@ let Container = styled.div`
         position: absolute;
         top: 4rem;
         min-width: 98vw;
-        h1{
+        h2{
             text-align: center;
             color: var(--headings);
             font-size: 2.2rem;
@@ -94,8 +99,8 @@ let Container = styled.div`
     }
 
     @media (min-width: 1800px) and (max-width: 3000px){
-        h1{
-            font-size: 2.8rem;
+        h2{
+            font-size: 2rem;
         }
     }
 
@@ -166,11 +171,11 @@ let ChooseUsContainer = styled.div`
         padding: 1.5rem 5rem;
         padding-top: 7rem;
         h1{
-            font-size: 3rem;
+            font-size: 2.5rem;
             text-align: center;
         }
         p{
-            font-size:2rem;
+            font-size:1.3rem;
             text-align: center;
         }
     }
@@ -180,7 +185,7 @@ let ChooseUsContainer = styled.div`
             grid-template-columns: 1fr 1fr;
             &>div{
                 h2{
-                    font-size: 2.2rem;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -222,7 +227,7 @@ let ChooseUsContainer = styled.div`
         }
     }
     .chooseUs-animation{
-        width: 4rem;
+        width: 3rem;
     }
     }
 

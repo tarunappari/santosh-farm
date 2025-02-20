@@ -19,6 +19,10 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   color: #0a0a0a;
   background: #ffffff;
@@ -71,7 +75,7 @@ img {
 }
 
 .card-img {
-  background-image: url("/assests/bg.jpg");
+  background-image: url("/assests/bg (2).jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,11 +84,11 @@ img {
 }
 
 .card-img2 {
-  background-image: url("/assests/sprinkle.jpg");
+  background-image: url("/assests/sprinkle (2).jpg");
 }
 
 .card-img3 {
-  background-image: url("/assests/sprinkle-man.jpg");
+  background-image: url("/assests/sprinle-man2.jpg");
 }
 
 .card-img4 {

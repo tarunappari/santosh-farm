@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import Image from 'next/image';
-import grass1 from '../../../public/assests/spray.jpg'
+import grass1 from '../../../public/assests/spray2.jpg'
 import grass2 from '../../../public/assests/rolls.jpg'
-import grass3 from '../../../public/assests/tracktor.jpg'
+import grass3 from '../../../public/assests/tracktor (2).jpg'
 import { motion as m } from "framer-motion";
 
 const Aboutus = () => {
@@ -30,7 +30,7 @@ const Aboutus = () => {
                     initial={{ x: 50, opacity: 0 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ type: 'spring', duration: 1, delay: 0.2 }}
-                    viewport={{ once: true, amount: 0.5 }}>ABOUT US</m.h3>
+                    viewport={{ once: true, amount: 0.5 }}>OUR STORY</m.h3>
                 <m.h1
                     initial={{ x: 100, opacity: 0 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -40,7 +40,10 @@ const Aboutus = () => {
                     initial={{ x: 150, opacity: 0 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ type: 'spring', duration: 1, delay: 0.7 }}
-                    viewport={{ once: true, amount: 0.5 }}>Your destination for premium-quality grass solutions. We specialize in diverse grass varieties to transform any space into a lush green haven, whether it’s a balcony, garden, or terrace. With sustainable practices and a passion for greenery, we provide vibrant, durable, and eco-friendly grass tailored to your needs. At Santosh Farms, we don’t just grow grass—we cultivate beauty, comfort, and happiness in every corner of your life.</m.p>
+                    viewport={{ once: true, amount: 0.5 }}>Santosh Farms & Nursery began with a vision for quality and sustainability. With 
+                    advanced farming techniques and cutting-edge machinery, we’ve grown into a 
+                    large-scale operation. Looking ahead, we plan to introduce new grass varieties, 
+                    expand landscaping projects, and integrate smart farming technologies.</m.p>
             </div>
         </Aboutusontainer>
     )
@@ -127,10 +130,10 @@ const Aboutusontainer = styled.div`
         .left-container{
             padding-left: 15rem;
             .experience{
-                left: 17rem;
+                left: 8rem;
             }
             .farmhouse{
-                width: 30rem;
+                width: 28rem;
                 height: 40rem;
                 img{
                     width: 100%;
@@ -147,7 +150,7 @@ const Aboutusontainer = styled.div`
             }
         }
         .grass2{
-            width: 22rem;
+            width: 20rem;
             left: 28rem;
             img{
                 width: 100%;
@@ -156,14 +159,14 @@ const Aboutusontainer = styled.div`
         .right-container{
         padding: 1.5rem;
         h3{
-            font-size: 3rem;
+            font-size: 2rem;
         }
         h1{
-            font-size: 4rem;
+            font-size: 3rem;
         }
         p{
             padding-top: 0.8rem;
-            font-size: 1.9rem;
+            font-size: 1.2rem;
         }
     }
     }

@@ -19,7 +19,7 @@ const Navbar = () => {
             </div>
             <div className="bottom-section">
                 <div>
-                    <Image src={logo} alt='logo' width={100} />
+                    <Image src={logo} alt='logo' width={80} />
                 </div>
                 <div>
                     <button>About Us</button>
@@ -85,17 +85,17 @@ const NavbarContainer = styled.div`
     @media (min-width: 1800px) and (max-width: 3008px){
         .bottom-section{
             img{
-                width: 10rem;
+                width: 6rem;
             }
         div{
             button{
-                font-size: 2rem;
+                font-size: 1.1rem;
                 font-weight: 500;
                 transition: all 0.2s;
                 padding: 0rem 0.5rem;
             }
             button:hover{
-                font-size: 2.05rem;
+                font-size: 1.2rem;
                 color: #d1d1d1;
             }
         }

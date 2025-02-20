@@ -8,29 +8,36 @@ import { motion as m } from "framer-motion";
 const HeroSection = () => {
     return (
         <HeroSectionContainer className='herosection'>
-            <div>
-                <m.h2
-                    initial={{ y: 50, opacity: 0 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ type: 'spring', duration: 1, delay: 0.2 }}
-                    viewport={{ once: true, amount: 0.5 }}>Santhosh Grass Farm</m.h2>
-            </div>
-            <div>
-                <m.h1
-                    initial={{ y: 80, opacity: 0 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ type: 'spring', duration: 1, delay: 0.5 }}
-                    viewport={{ once: true, amount: 0.5 }}>Premium Grass for Beautiful and Lush Landscapes</m.h1>
-            </div>
-            <div>
-                <m.p
-                    initial={{ y: 100, opacity: 0 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ type: 'spring', duration: 1, delay: 0.8 }}
-                    viewport={{ once: true, amount: 0.5 }}>Transform your spaces with our high-quality grass, grown to bring elegance, durability, and sustainability to every corner of your home or garden. Let us help you create the lush green environment you’ve always dreamed of.</m.p>
+            <div className="left-container">
+                <div>
+                    <m.h2
+                        initial={{ y: 50, opacity: 0 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ type: 'spring', duration: 1, delay: 0.2 }}
+                        viewport={{ once: true, amount: 0.5 }}>Santhosh Farm</m.h2>
+                </div>
+                <div>
+                    <m.h1
+                        initial={{ y: 80, opacity: 0 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ type: 'spring', duration: 1, delay: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}>Premium Grass for Beautiful and Lush Landscapes</m.h1>
+                </div>
+                <div>
+                    <m.p
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ type: 'spring', duration: 1, delay: 0.8 }}
+                        viewport={{ once: true, amount: 0.5 }}> Welcome to Santosh Farms & Nursery, a leader in premium grass and plant
+                        cultivation. From 2 acres in 2004 to 250 acres today, we’ve set industry
+                        benchmarks in innovation, sustainability, and quality. Trusted by landscapers,
+                        builders, and homeowners, we bring nature closer—one green patch at a time.</m.p>
+                </div>
             </div>
             <div className='landing-animation'>
-                <Lottie loop={true} animationData={grass} />
+                <div className="lottie-animation">
+                    <Lottie loop={true} animationData={grass} />
+                </div>
             </div>
         </HeroSectionContainer>
     )
@@ -40,16 +47,25 @@ export default HeroSection;
 
 const HeroSectionContainer = styled.div`
     background-color: rgb(0, 0, 0);
-    min-height: 93vh;
-    display: flex;
-    justify-content: center;
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: 65% 35%;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
     gap: 1rem;
     padding: 2rem;
+    .left-container{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
     .landing-animation{
-        width: 95%;
-        height: 5rem;
+        .lottie-animation{
+            width: 80%;
+        }
     }
     h2,h1,p{
         z-index: 9;
@@ -62,48 +78,63 @@ const HeroSectionContainer = styled.div`
         letter-spacing: 0.1rem;
     }
     h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 600;
-        text-align: center;
         color: var(--white);
     }
     p{
         color: var(--parawhite);
-        text-align: center;
-        padding: 0 5rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     @media (min-width: 1800px) and (max-width: 3008px){
         h2{
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
     h1{
-        font-size: 5.5rem;
+        font-size: 3.5rem;
     }
     p{
-        font-size: 2.1rem;
+        font-size: 1.2rem;
     }
     }
 
     @media only screen and (max-width:780px){
         padding: 1rem;
+        grid-template-columns: 100%;
+        h2,h1,p{
+        text-align: center;
+        }
         h1{
-            font-size: 3.5rem;
+            font-size: 2rem;
         }
-        p{
-            padding: 0 2rem;
+        .left-container{
+            align-items: center;
         }
+        .landing-animation{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        .lottie-animation{
+            width: 50%;
+        }
+    }
     }
 
     @media only screen and (max-width:555px){
         padding: 0.4rem;
         gap: 2rem;
         h1{
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
         p{
             padding: 0 0.5rem;
         }
+        .landing-animation{
+        .lottie-animation{
+            margin-top: -6rem;
+            width: 80%;
+        }
+    }
     }
 `

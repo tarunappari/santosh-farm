@@ -9,7 +9,9 @@ const Contact = () => {
             <div className='left-container'>
                 <div className="left-info">
                     <h1>Thousands of people trust our products</h1>
-                    <p>Interested in transforming your space with premium-quality grass? Fill out the form and our team will get back to you shortly.
+                    <p>Need premium grass for your project? Get in touch via our contact form or visit
+                        our farm. Find us on Google Maps for easy navigation. Santosh Farms &
+                        Nursery is here to bring your green spaces to life
                     </p>
                 </div>
                 <div className="contact-animation">
@@ -28,6 +30,15 @@ const Contact = () => {
                     </div>
                     <div>
                         <input type="number" placeholder='PHONE NUMBER*' />
+                    </div>
+                    <div>
+                        <select defaultValue="">
+                            <option value="" disabled>Select Grass Type*</option>
+                            <option value="carpet">Carpet Grass</option>
+                            <option value="fescue">Fescue Grass</option>
+                            <option value="paspalum">Paspalum Grass</option>
+                            <option value="selection1">Selection 1 Grass</option>
+                        </select>
                     </div>
                     <div>
                         <textarea name="Your message" rows={3} placeholder='How Can We Help You?'></textarea>
@@ -69,7 +80,7 @@ const ContactContainer = styled.div`
         .left-info{
             h1{
             color: var(--headings);
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: 600;
             text-align: center;
             padding-bottom: 1rem;
@@ -77,7 +88,7 @@ const ContactContainer = styled.div`
         p{
             color: var(--parawhite);
             text-align: center;
-            font-size: 1.1rem;
+            font-size: 1rem;
             padding: 0 2rem;
         }
         }
@@ -100,7 +111,8 @@ const ContactContainer = styled.div`
                 color: var(--white);
             }
             input,
-            textarea {
+            textarea,
+            select {
                 width: 100%;
                 margin-bottom: 1rem;
                 background-color: transparent;
@@ -108,6 +120,9 @@ const ContactContainer = styled.div`
                 font-size: 1.1rem;
                 padding: 0.5rem 1rem;
                 color: var(--white);
+            }
+            option{
+                border: 2px solid red;
             }
 
             input:focus,
@@ -126,18 +141,24 @@ const ContactContainer = styled.div`
         }
     }
 
+    select{
+        width: 100%;
+        background-color: #1c1d13  !important;
+        border: 0.1rem solid var(--parawhite);
+    }
+
     @media (min-width: 1800px) and (max-width: 3008px){
         .left-container{
         .left-info{
             h1{
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         p{
-            font-size: 2rem;
+            font-size: 1.1rem;
         }
         }
         .contact-animation{
-            width: 40rem;
+            width: 30rem;
         }
     }
 
@@ -145,11 +166,11 @@ const ContactContainer = styled.div`
         .input-info {
             gap: 2rem;
             h1{
-                font-size: 3rem;
+                font-size: 2rem;
             }
             input,
             textarea {
-                font-size: 1.8rem;
+                font-size: 1.2rem;
             }
 
             input:focus,
@@ -159,7 +180,7 @@ const ContactContainer = styled.div`
 
             button {
                 padding: 0.6rem 3rem;
-                font-size: 2rem;
+                font-size: 1.1rem;
             }
         }
     }
