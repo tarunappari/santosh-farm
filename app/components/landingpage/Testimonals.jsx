@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Lottie from 'lottie-react'
 import quotes from '../../../public/assests/reviews/quotes.svg'
 import star from '../../../public/assests/reviews/star.svg'
-import couple from '../../../public/assests/reviews/itachi.jpg'
 import review from '../../../public/lottie/review.json'
 import Image from 'next/image';
 
@@ -44,7 +43,7 @@ const Testimonals = () => {
                             </div>
                             <div className='guest'>
                                 <div>
-                                    <Image src={couple} alt='guest' width={30} />
+                                    <img src="/assests/reviews/itachi.jpg" alt='guest' width={30} />
                                 </div>
                                 <div>
                                     <h3>Jenny Robert</h3>
@@ -72,7 +71,7 @@ const Testimonals = () => {
                             </div>
                             <div className='guest'>
                                 <div>
-                                    <Image src={couple} alt='guest' width={30} />
+                                    <img src="/assests/reviews/itachi.jpg" alt='guest' width={30} />
                                 </div>
                                 <div>
                                     <h3>Jenny Robert</h3>
@@ -100,7 +99,7 @@ const Testimonals = () => {
                             </div>
                             <div className='guest'>
                                 <div>
-                                    <Image src={couple} alt='guest' width={30} />
+                                    <img src="/assests/reviews/itachi.jpg" alt='guest' width={30} />
                                 </div>
                                 <div>
                                     <h3>Jenny Robert</h3>
@@ -128,7 +127,7 @@ const Testimonals = () => {
                             </div>
                             <div className='guest'>
                                 <div>
-                                    <Image src={couple} alt='guest' width={30} />
+                                    <img src="/assests/reviews/itachi.jpg" alt='guest' width={30} />
                                 </div>
                                 <div>
                                     <h3>Jenny Robert</h3>
@@ -156,7 +155,7 @@ const Testimonals = () => {
                             </div>
                             <div className='guest'>
                                 <div>
-                                    <Image src={couple} alt='guest' width={30} />
+                                    <img src="/assests/reviews/itachi.jpg" alt='guest' width={30} />
                                 </div>
                                 <div>
                                     <h3>Jenny Robert</h3>
@@ -184,7 +183,7 @@ const Testimonals = () => {
                             </div>
                             <div className='guest'>
                                 <div>
-                                    <Image src={couple} alt='guest' width={30} />
+                                    <img src="/assests/reviews/itachi.jpg" alt='guest' width={30} />
                                 </div>
                                 <div>
                                     <h3>Jenny Robert</h3>
@@ -212,7 +211,7 @@ const Testimonals = () => {
                             </div>
                             <div className='guest'>
                                 <div>
-                                    <Image src={couple} alt='guest' width={30} />
+                                    <img src="/assests/reviews/itachi.jpg" alt='guest' width={30} />
                                 </div>
                                 <div>
                                     <h3>Jenny Robert</h3>
@@ -240,7 +239,7 @@ const Testimonals = () => {
                             </div>
                             <div className='guest'>
                                 <div>
-                                    <Image src={couple} alt='guest' width={30} />
+                                    <img src="/assests/reviews/itachi.jpg" alt='guest' width={30} />
                                 </div>
                                 <div>
                                     <h3>Jenny Robert</h3>
@@ -256,7 +255,6 @@ const Testimonals = () => {
 }
 
 export default Testimonals;
-
 
 const TestimonalsContainer = styled.div`
     display: flex;
@@ -287,15 +285,15 @@ const TestimonalsContainer = styled.div`
             letter-spacing: 0.2rem;
         }
         h1{
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 600;
             text-align: center;
         }
         p{
             color: var(--para);
             text-align: center;
-            font-size: 1.1rem;
-            padding: 0 12rem;
+            font-size: 1rem;
+            padding: 0 5rem;
         }
         }
         .right{
@@ -485,23 +483,25 @@ const TestimonalsContainer = styled.div`
         .left{
             padding: 0.5rem;
             h1{
-            font-size: 1.8rem;
+            font-size: 1.4rem;
         }
         h3{
             font-size: 1.3rem;
         }
         p{
             padding: 0 1rem;
+            font-size: 0.9rem;
         }
         }
     }
 
     .testimonal-card {
-  min-height: 10rem;
+  min-height: 9rem;
   max-width: 20rem;
   min-width: 20rem;
   cursor: pointer;
 }
+padding-bottom: 2rem;
 
 }
 
@@ -525,7 +525,7 @@ const TestimonalsContainer = styled.div`
     }
 
     .testimonal-card {
-  min-height: 10rem;
+  min-height: 9rem;
   max-width: 18rem;
   min-width: 18rem;
 }

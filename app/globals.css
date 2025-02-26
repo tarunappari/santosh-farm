@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --white: #ffffff;
   --headings: #c8a86e;
-  /* --headings: #31ad5d; */
-  --para: rgb(0, 0, 0, 0.7);
-  --parawhite: rgb(255, 255, 255, 0.7);
+  --para: rgba(0, 0, 0, 0.7);
+  --parawhite: rgba(255, 255, 255, 0.7);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,14 +18,14 @@
   }
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   color: #0a0a0a;
   background: #ffffff;
-  font-family: "Poppins", serif;
+  font-family: "Poppins", sans-serif;
   scroll-snap-align: smooth;
   scroll-snap-type: mandatory;
 }
@@ -35,43 +34,20 @@ img {
   cursor: pointer;
 }
 
+/* Background Image Styles */
 .herosection {
   background-image: url("/assests/treebg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  filter: blur(0px);
 }
-
-/* .grass3 {
-  background-image: url("/assests/tracktor.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  filter: blur(0px);
-} */
 
 .herosection::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.8);
-}
-
-.grass2::before,
-.grass3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .card-img {
@@ -80,7 +56,6 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  filter: blur(0.1px);
 }
 
 .card-img2 {
@@ -101,18 +76,30 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  filter: blur(0.1px);
 }
 
 .chooseUs::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.contactsection {
+  background-image: url("/assests/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contactsection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 
 @keyframes scroll {
   0% {
@@ -124,43 +111,21 @@ img {
   }
 }
 
-.contactsection {
-  background-image: url("/assests/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  filter: blur(0px);
-}
 
-.contactsection::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
-
-
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 5px;
   border-radius: 5rem;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: var(--white);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #b5b4b4;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #888;
 }

@@ -93,7 +93,7 @@ let Container = styled.div`
         h2{
             text-align: center;
             color: var(--headings);
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 600;
         }
     }
@@ -111,8 +111,8 @@ let Container = styled.div`
 
     @media only screen and (max-width:575px){
         .chooseUs-title{
-        h1{
-            font-size: 1.5rem;
+        h2{
+            font-size: 1.5rem !important;
         }
     }
     }
@@ -133,13 +133,13 @@ let ChooseUsContainer = styled.div`
             font-weight: 600;
         }
         h1{
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 600;
         }
         p{
             padding-top: 0.8rem;
             color: var(--para);
-            font-size:1.02rem;
+            font-size:1rem;
         }
     }
     .right-container{
@@ -155,7 +155,7 @@ let ChooseUsContainer = styled.div`
                 align-items: center;
                 flex-direction: column;
                 h2{
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     font-weight: 600;
                 }
             }
@@ -205,11 +205,11 @@ let ChooseUsContainer = styled.div`
     @media only screen and (max-width:575px){
         .left-container{
             h1{
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 text-align: center;
             }
             p{
-                font-size: 1rem;
+                font-size: 0.9rem;
                 text-align: center;
             }
         }

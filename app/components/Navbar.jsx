@@ -1,54 +1,67 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
-import logo from '../../public/logo.png'
 import Image from 'next/image';
-import call from '../../public/assests/nav/call.svg'
-import yt from '../../public/assests/nav/youtube.svg'
-import insta from '../../public/assests/nav/insta.svg'
+import Link from 'next/link';
+
+// Corrected image paths (public folder usage in Next.js)
+import logo from '../../public/logo.png'
+const call = "/assests/nav/call.svg";
+const yt = "/assests/nav/youtube.svg";
+const insta = "/assests/nav/insta.svg";
 
 const Navbar = () => {
     return (
         <NavbarContainer>
             <div className="topsection">
-                <div><Image src={call} alt='call' width={20} /> 9618461188 / 9949151188</div>
                 <div>
-                    <a href="" target='_blank'><Image src={yt} alt='call' width={20} /></a>
-                    <a href="" target='_blank'><Image src={insta} alt='call' width={20} /></a>
-                    <a href="#contact"><button>BOOK NOW!</button></a>
+                    <img src={call} alt='call' width={20} height={20} /> 9618461188 / 9949151188
+                </div>
+                <div>
+                    <Link href="https://youtube.com" target='_blank' rel="noopener noreferrer">
+                        <Image src={yt} alt='YouTube' width={20} height={20} />
+                    </Link>
+                    <Link href="https://instagram.com" target='_blank' rel="noopener noreferrer">
+                        <Image src={insta} alt='Instagram' width={20} height={20} />
+                    </Link>
+                    <Link href="#contact">
+                        <button>BOOK NOW!</button>
+                    </Link>
                 </div>
             </div>
             <div className="bottom-section">
                 <div>
-                    <Image src={logo} alt='logo' width={80} />
+                    <img src='/logo.png' alt="logo" width={80} height={80}/>
                 </div>
-                <div>
-                    <button>About Us</button>
-                    <button>Services</button>
-                    <button>Contact Us</button>
+                <div className='links'>
+                    <Link href="#aboutus"><button>About Us</button></Link>
+                    <Link href="#products"><button>Services</button></Link>
+                    <Link href="#contact"><button>Contact Us</button></Link>
                 </div>
             </div>
         </NavbarContainer>
-    )
-}
+    );
+};
 
 export default Navbar;
 
 const NavbarContainer = styled.div`
     position: relative;
     z-index: 999;
-    .topsection{
+    .topsection {
         background-color: #0a0a0a;
         color: #ededed;
-        padding: 0rem 2rem;
+        padding: 0.5rem 2rem;
         display: flex;
         justify-content: space-between;
-        div{
+        
+        div {
             display: flex;
             align-items: center;
             gap: 0.5rem;
             font-size: 0.9rem;
             color: var(--parawhite);
-            button{
+
+            button {
                 padding: 0.5rem 1rem;
                 margin: 0.5rem;
                 font-size: 0.85rem;
@@ -57,71 +70,63 @@ const NavbarContainer = styled.div`
             }
         }
     }
-    .bottom-section{
-        position: absolute;
-        min-width: 98vw;
-        overflow: hidden;
+
+    .bottom-section {
+        position: absolute; /* Changed from absolute */
+        width: 100%; /* Changed from min-width: 98vw */
         padding: 0rem 3rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: var(--white);
-        div{
+
+        div {
             display: flex;
             gap: 1rem;
             padding: 0rem;
-            button{
+
+            button {
                 font-weight: 500;
                 transition: all 0.2s;
                 padding: 0rem 0.5rem;
             }
-            button:hover{
+
+            button:hover {
                 font-size: 1.05rem;
                 color: #d1d1d1;
             }
         }
     }
 
-    @media (min-width: 1800px) and (max-width: 3008px){
-        .bottom-section{
-            img{
-                width: 6rem;
-            }
-        div{
-            button{
-                font-size: 1.1rem;
-                font-weight: 500;
-                transition: all 0.2s;
-                padding: 0rem 0.5rem;
-            }
-            button:hover{
-                font-size: 1.2rem;
-                color: #d1d1d1;
-            }
-        }
-    }
-    }
-
-    @media only screen and (max-width:530px){
-        .topsection{
+    @media only screen and (max-width: 530px) {
+        .topsection {
             padding: 0.5rem;
-          div{
-            font-size: 0.8rem;
-            button{
-                padding: 0.3rem 1rem;
+            
+            div {
+                font-size: 0.8rem;
+
+                button {
+                    padding: 0.3rem 1rem;
+                }
+            }
+        }
+
+        .bottom-section {
+            padding: 0rem 0.3rem;
+            
+            div {
+                gap: 0.5rem;
+
+                button {
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    padding: 0;
+                }
+            }
+
+            .links{
+                display: none;
             }
         }
     }
-    .bottom-section{
-        padding: 0rem 0.3rem;
-        div{
-            gap: 0.5rem;
-            button{
-                font-weight: 500;
-                font-size: 0.9rem;
-                padding: 0;
-            }
-        }
-    }
-    }
-`
+`;

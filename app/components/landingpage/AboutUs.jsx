@@ -1,20 +1,16 @@
 import React from 'react'
 import styled from 'styled-components';
-import Image from 'next/image';
-import grass1 from '../../../public/assests/spray2.jpg'
-import grass2 from '../../../public/assests/rolls.jpg'
-import grass3 from '../../../public/assests/tracktor (2).jpg'
 import { motion as m } from "framer-motion";
 
 const Aboutus = () => {
     return (
-        <Aboutusontainer>
+        <Aboutusontainer id='aboutus'>
             <div className="left-container">
                 <div className="grass3">
-                    <Image src={grass3} alt='img' width={320} loading="lazy" />
+                    <img src='/assests/tracktor (2).jpg' width={290} alt='img' loading="lazy"  />
                 </div>
                 <div className="farmhouse">
-                    <Image src={grass1} alt='img' width={320} loading="lazy" />
+                    <img src='/assests/spray2.jpg' alt='img' width={290} loading="lazy"  />
                 </div>
                 <div className="experience">
                     <div style={{ color: 'var(--headings)', fontSize: '1.4rem' }}>20+</div>
@@ -22,7 +18,7 @@ const Aboutus = () => {
                     <div>Experience</div>
                 </div>
                 <div className="grass2">
-                    <Image src={grass2} alt='img' width={320} loading="lazy" />
+                    <img src='/assests/rolls.jpg' alt='img' width={290} loading="lazy" />
                 </div>
             </div>
             <div className="right-container">
@@ -104,11 +100,11 @@ const Aboutusontainer = styled.div`
         position: relative;
         h3{
             color: var(--headings);
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 600;
         }
         h1{
-            font-size: 2.4rem;
+            font-size: 2.1rem;
             font-weight: 600;
         }
         p{
@@ -201,9 +197,14 @@ const Aboutusontainer = styled.div`
             padding: 0;
             h3{
                 font-size: 1.3rem;
+                text-align: center;
             }
             h1{
-            font-size: 2rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        p{
+            text-align: center;
         }
         }
         .left-container{

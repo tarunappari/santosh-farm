@@ -104,7 +104,7 @@ const ContactContainer = styled.div`
             justify-content: space-between;
             gap: 1rem;
             h1{
-                font-size: 2.5rem;
+                font-size: 2.2rem;
                 padding-bottom: 2rem;
                 font-weight: 600;
                 text-align: center;
@@ -117,7 +117,7 @@ const ContactContainer = styled.div`
                 margin-bottom: 1rem;
                 background-color: transparent;
                 border-bottom: 0.1rem solid var(--parawhite);
-                font-size: 1.1rem;
+                font-size: 1rem;
                 padding: 0.5rem 1rem;
                 color: var(--white);
             }
@@ -211,9 +211,10 @@ const ContactContainer = styled.div`
                 }
                 .input,
                 textarea{
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                 }
             }
         }
     }
 `
+
