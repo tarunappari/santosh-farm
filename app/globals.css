@@ -51,7 +51,7 @@ img {
 }
 
 .card-img {
-  background-image: url("/assests/bg (2).jpg");
+  background-image: url("/assests/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,7 +67,7 @@ img {
 }
 
 .card-img4 {
-  background-image: url("/assests/track.jpg");
+  background-image: url("/assests/treebg.jpg");
 }
 
 .chooseUs {

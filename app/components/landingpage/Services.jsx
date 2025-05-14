@@ -44,7 +44,7 @@ const Products = () => {
                     title="Shade-Tolerant Grass"
                     description="Perfect for areas with limited sunlight, this grass thrives in shaded environments, making it ideal for balconies, under trees, or indoor spaces."
                     example="e.g., Zoysia Grass"
-                    imgClass="card-img1"
+                    imgClass="card-img"
                     animation={slideIn("right", 0.2)}
                 />
                 <ProductCard
@@ -59,6 +59,13 @@ const Products = () => {
                     description="Known for its durability, Bermuda Grass is perfect for outdoor lawns, parks, and sports fields. It withstands heavy foot traffic and harsh weather conditions."
                     example="e.g., Bermuda Grass"
                     imgClass="card-img3"
+                    animation={slideIn("right", 0.2)}
+                />
+                <ProductCard
+                    title="Paspalum Grass"
+                    description="Best suited for shaded areas and sandy soils. With its soft texture and broad leaves, its a top choice for waterfront properties and shaded landscapes"
+                    example="e.g., Buffalo Grass"
+                    imgClass="card-img4"
                     animation={slideIn("right", 0.2)}
                 />
             </div>
@@ -104,15 +111,16 @@ const ServiceContainer = styled.div`
     }
     .cards{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        gap: 1rem;
-        padding: 0 8rem;
+        width: 100%;
+        gap: 2rem;
+        padding: 0 2rem;
         .card{
-            max-width: 30%;
-            min-width: 30%;
-            min-height: 27rem;
-            max-height: 27rem;
+            max-width: 23vw !important;
+            min-width: 23vw !important;
+            min-height: 35rem !important;
+            max-height: 35rem !important;
             overflow: hidden;
             display: grid;
             grid-template-rows: 50% 50%;
@@ -182,31 +190,54 @@ const ServiceContainer = styled.div`
     }
     }
 
-    @media only screen and (max-width:955px){
-        padding: 1rem 0;
+    @media (min-width: 661px) and (max-width: 1439px){
         .cards{
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+            gap: 1rem;
             padding: 0 6rem;
             .card{
-                max-width: 100%;
-                min-width: 100%;
+                max-width: 40vw !important;
+                min-width: 40vw !important;
+                min-height: 25rem !important;
+                max-height: 25rem !important;
             }
         }
+    }
+
+    @media only screen and (max-width:955px){
+        padding: 1rem 0;
         .info{
             p{
                 padding: 0 5rem;
             }
             h1{
                 font-size: 2.5rem;
+                
             }
         }
     }
 
     @media only screen and (max-width:660px){
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            gap: 1rem;
+            padding: 0 6rem;
+            .card{
+                max-width: 90vw !important;
+                min-width: 90vw !important;
+                min-height: 25rem !important;
+                max-height: 25rem !important;
+            }
+        }
         .info{
             padding: 0.5rem;
             h1{
-                font-size: 2.5rem;
+                font-size: 2rem;
+                text-align: center;
             }
             p{
                 padding: 0 2rem;
